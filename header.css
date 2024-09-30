@@ -1,0 +1,33 @@
+header .address_section {
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+}
+
+header .address_section .container{
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+header .address_section .container .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header .address_section .container .text h1{
+    color: white;
+    margin-bottom: 20px;
+}
+header .container .links{
+    display: flex;
+    color: white;
+    gap: 10px;
+}
+
+header .container .links a{
+    color: white;
+}
+header .container .links a:hover{
+    color: red;
+}

@@ -1,0 +1,217 @@
+.page1-contact{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    animation: bg 20s infinite linear;
+    background-image: linear-gradient(to right,#4141ff, #00007c,#00007c,#000080,#4141ff);
+    background-size: 400%;
+    position: relative;
+}
+.page1-contact .container .address_section{
+    border-radius: 0;
+
+}
+.page1-contact .container{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+ justify-content: center;
+
+}
+.page1-contact .container .box{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+    padding: 8px;
+    background-color: white;
+  width: 50%;
+  border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    transition: .5s;
+    box-shadow: 0 0 5px  white,
+    0 0 0 5px  #000041;
+}
+.page1-contact .container .box::after{
+    position: absolute;
+    content: " ";
+  width: 3000%;
+    height: 50%;
+    background-color: #000041;
+    animation: contact 5s infinite linear;
+    background-image: linear-gradient(to right, black, #000099, #000080, black);
+    background-size: 400%;
+ 
+   
+}
+
+
+.page1-contact .container .box .box1{
+    background-image: url("./images/shark\ long2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+   padding: 50px;
+   border-radius: 6px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   z-index: 1;
+     box-shadow: 0 0 5px  white,
+    0 0 0 5px  #000041;
+}
+
+
+.page1-contact .container .box .box1 .text input {
+    margin-bottom: 20px;
+    width: 440px;
+    padding-left: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    border: none;
+    transition: .5s;
+   
+}
+.page1-contact .container .box .box1 .header-contact h1{
+    color: white;
+    font-size: 30px;
+    margin-bottom:40px ;
+}
+.page1-contact .container .box .box1 .text input::placeholder{
+    color: #000041;
+    caret-color: #000041;
+}
+.page1-contact .container .box .box1 .text input:focus::placeholder{
+    color: white;
+    caret-color: white;
+    
+}
+.page1-contact .container .box .box1 .text textarea {
+    margin-bottom: 40px;
+    width: 440px;
+    padding-left: 25px;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px; 
+    border: none;
+    height: 310px;
+    transition: .5s;
+}
+
+.page1-contact .container .box .box1 .text input:focus,
+.page1-contact .container .box .box1 .text textarea:focus{
+    outline: none;
+    background-color: #000041;
+    transition: .5s;
+    color: white;
+    caret-color: white;
+  
+}
+.page1-contact .container .box .box1 .btn a{
+    padding: 10px 30px;
+    color: white;
+    border: 3px solid white;
+    transition: .5s;
+}
+.page1-contact .container .box .box1 .btn a:hover{
+    padding: 10px 30px;
+    color: #000041;
+    background-color: white;
+    border: 3px solid white;
+}
+
+@keyframes bg {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 400%;
+    
+    }
+  }
+
+
+
+
+
+  .page1-contact .container .address_section {
+ 
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    box-shadow: 0 0 5px  white,
+    0 0 0 5px  #000041;
+    border-radius: 15px;
+    transition: .5s;
+    cursor: pointer;
+    width: 50%;
+
+    
+}
+
+.page1-contact .container .address_section::after{
+    position: absolute;
+    content: " ";
+    width: 3000%;
+    height: 50%;
+    background-color:white;
+    animation: contact 5s infinite linear;
+border-radius: 10px;
+box-shadow: 0 0 3px  white,
+0 0 0 3px  #000041;
+}
+
+
+.page1-contact .container .address_section  .text{
+display: flex;
+align-items: center;
+justify-content: center;
+    z-index: 23444;
+border-radius: 10px;
+box-shadow: 0 0 5px  white,
+0 0 0 5px  #000041;
+}
+.page1-contact .container .address_section  .text img{
+    width: 100%;
+height: 100%;
+border-radius: 10px;
+
+}
+
+@media (max-width: 992px) {
+    .page1-contact .container{
+        flex-wrap: wrap;
+    }
+    .page1-contact .container .box {
+        width: 100%;
+    }
+    .page1-contact .container .box .box1 .text input{
+        width: 100%;
+    }
+    .page1-contact .container .box .box1 .text textarea {
+        width: 100%;
+    }
+  
+    .page1-contact .container .address_section{
+
+   display: none;
+    }
+  }
+
+  @keyframes contact {
+
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 400%;
+      transform: rotate(-360deg);
+    }
+  }

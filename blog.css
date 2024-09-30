@@ -1,0 +1,199 @@
+
+.page2-blog {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+  }
+  .page2-blog .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .page2-blog .container .text h1 {
+    margin-bottom: 15px;
+    color: #000041;
+    font-size: 50px;
+    background-image: linear-gradient(to right, #0000e6, #000099, #00007c);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+            background-clip: text;
+  }
+  .page2-blog .container .gallary{
+    position: relative;
+    margin-bottom: 60px;
+  }
+  .page2-blog .container .gallary .boxs {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px 30px;
+
+transition: .5s;
+    border-radius: 50px;
+
+
+  }
+
+  .page2-blog .container .gallary  .text{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+z-index: 10000;
+transform: translate(-50%,-50%);
+background-color: white;
+padding: 10px;
+
+  }
+  .page2-blog .container .gallary .boxs .box {
+height: 100%;
+  width: 100%;
+    transition: 0.5s;
+    position: relative;
+    border-radius: 15px;
+    width: 100%;
+    overflow: hidden;
+   
+ 
+  }
+  .page2-blog .container .gallary .boxs .box:not(:hover , .box1){
+
+    filter: blur(5px);
+  }
+  .page2-blog .container .gallary .boxs .box:hover:not(.box1){
+    scale: 1.03;
+  }
+  .page2-blog .container .gallary .boxs .box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+  border: none;
+  object-fit: cover;
+  }
+  .page2-blog .container .gallary .boxs .box span {
+    font-size: 40px;
+    display: block;
+  }
+  .page2-blog .container .gallary .boxs .box::after {
+    position: absolute;
+    content: " ";
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    background-color: rgba(255, 255, 255, 0.135);
+    width: 0%;
+    height: 0%;
+    transition: 0.3s;
+    border-radius: 15px;
+  }
+  .page2-blog .container .gallary .boxs .box:hover {
+    margin-top: 0px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.695);
+  }
+
+  .page2-blog .container .gallary .boxs .box:hover::after {
+    width: 100%;
+    height: 100%;
+    transform-origin: center center;
+  }
+  .page2-blog .container .gallary .boxs .box1 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+ 
+    grid-row-end: 3;
+
+  }
+  .page2-blog .container .btn a {
+    background-color: #000041;
+    color: white;
+    padding: 15px 30px;
+    font-weight: bold;
+    font-size: 20px;
+    border: 3px solid #000041;
+    position: relative;
+    transition: 0.5s;
+  }
+  .page2-blog .container .btn a::after {
+    position: absolute;
+    content: " ";
+    bottom: 0px;
+    width: 5px;
+    height: 0%;
+    background-color: #000041;
+    transition: 0.5s;
+    right: -0.5px;
+  }
+  .page2-blog .container .btn a::before {
+    position: absolute;
+    content: " ";
+    bottom: 0px;
+    width: 5px;
+    height: 0%;
+    background-color: #000041;
+    transition: 0.5s;
+    left: -1px;
+  }
+  .page2-blog .container .btn a:hover {
+    background-color: transparent;
+    border: 3px solid #000041;
+    color: #000041;
+  }
+  .page2-blog .container .btn a:hover::after {
+    height: 100%;
+  }
+  .page2-blog .container .btn a:hover::before {
+    height: 100%;
+  }
+  @media (max-width: 1000px) {
+    .page2-blog .container .gallary .boxs {
+      display: flex;
+      flex-wrap: wrap;
+      border-radius: 0;
+    }
+    .page2-blog .container .gallary .boxs .box {
+
+      height: 100%;
+    }
+    .page2-blog .container .gallary .boxs .box:hover{
+        box-shadow: none;
+    }
+    .page2-blog .container .gallary .boxs .box img {
+      width: 100%;
+      height: 100%;
+    }
+    .page2-blog .container .gallary .boxs .box:hover {
+      margin-top: 0px;
+    }
+    .page3-shark {
+      width: 100%;
+    }
+    .page3-shark .container {
+      width: 100%;
+    }
+    .page3-shark .container .timeline {
+      width: 100%;
+    }
+    .page3-shark .container .timeline .content {
+      width: 100%;
+    }
+    .page3-shark .container .timeline::after {
+      display: none;
+    }
+    .page3-shark .container .timeline .right-container {
+      left: 0;
+    }
+
+  .page2-blog .container .text{
+display: none;
+}
+.page2-blog .container .gallary .boxs .box:not(:hover){
+
+    filter: blur(0px);
+
+  }
+  .page2-blog .container .gallary .boxs .box:hover{
+scale: 1;
+  }
+  }
